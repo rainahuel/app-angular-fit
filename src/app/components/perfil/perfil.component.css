@@ -1,0 +1,40 @@
+.contenido {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+}
+h2 {
+    width: 100%;
+    text-align: center;
+}
+
+.contenidoRutinas {
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 30px;
+    border: 1px solid;
+    border-radius: 4px;
+    padding: 15px;
+    width: 300px;
+    height: 100%;
+    text-align: center;
+}
+
+.contenedorInfoPerfil{
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 30px;
+    background-color: #0671C9;
+    color: white;
+    text-align: left;
+    border: 1px solid;
+    width: 250px;
+    height: 250px;
+    border-radius: 6px;
+    padding: 15px;
+}
+
+.contenedorInfoPerfil h3{
+    text-align: center;
+}
