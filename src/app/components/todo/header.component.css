@@ -1,0 +1,23 @@
+.contenedorHeader {
+    display: flex; 
+}
+
+nav{
+    background-color: #0671c9;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+
+}
+
+nav a{
+    margin-right: 20px;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: black;
+}

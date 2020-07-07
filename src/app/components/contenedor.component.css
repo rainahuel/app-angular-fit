@@ -1,0 +1,18 @@
+.contenedorPrincipal {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+
+.header{ 
+    display: flex;
+    width: 100%;
+    height: 8%;
+}
+
+.paginas {
+    width: 100%;
+    height: 92%;
+}
