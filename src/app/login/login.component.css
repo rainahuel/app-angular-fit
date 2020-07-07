@@ -1,0 +1,66 @@
+.contenedorLogin{
+    background:
+    linear-gradient(to top right, rgb(13, 252, 45), transparent),
+    linear-gradient(to top left, rgb(1, 37, 238), transparent);
+    background-blend-mode: screen;
+    width: 100%;
+    height: 100vh;
+    flex-wrap: wrap
+}
+
+.contenedorLogin h2{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 0;
+   width: 100%;
+   height: 20%;
+   letter-spacing: 2px ;
+
+}
+
+.contenedorFormulario {
+    margin: 0;
+    height: 60%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+form {
+    background-color: #0585a1;
+    border: 1px solid black;
+    color: white;
+    height: 300px;
+    width: 250px;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+form h3{
+    color: white;
+    letter-spacing: 2px ;
+    text-align: center;
+}
+
+form input{
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    color: rgb(8, 8, 8);
+    padding: 15px;
+    margin: 8px 0px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+}
