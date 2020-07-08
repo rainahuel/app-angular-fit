@@ -3,8 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { map, catchError} from 'rxjs/operators';
 import { throwError} from 'rxjs';
 import { environment as env } from '../../environments/environment';
-import Swal from 'sweetalert2'
-
+import Swal from 'sweetalert2';
 
 @Injectable({
   providedIn: 'root'
