@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { PerfilService } from '../../services/perfil.service';
 import { Rutina } from '../../models/rutina';
 import { Usuario } from '../../models/usuario';
-import swal from'sweetalert2';
+import Swal from 'sweetalert2'
 
 @Component({
   selector: 'app-perfil',
@@ -27,7 +27,7 @@ export class PerfilComponent implements OnInit {
 
   quitarRutina(rutina: any) {
 
-    swal.fire({
+    Swal.fire({
       title: '¿quieres eliminar la rutina de tu perfil?',
       icon: 'warning',
       showCancelButton: true,

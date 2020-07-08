@@ -5,7 +5,7 @@ import { map, catchError } from 'rxjs/operators';
 import { Router } from '@angular/router';
 import { environment as env } from '../../environments/environment';
 import { throwError} from 'rxjs';
-import swal from'sweetalert2';
+import Swal from 'sweetalert2'
 
 @Injectable({
   providedIn: 'root'
@@ -55,10 +55,10 @@ export class UsuarioService {
   crearUsuario(usuario: Usuario) {
     return this.http.post(env.urlBase + env.api.usuario.crearUsuario, usuario)
               .pipe(map( (resp:any) => {
-                swal.fire('Usuario creado', usuario.email, 'success')
+                Swal.fire('Usuario creado', usuario.email, 'success')
               }),
               catchError((err:any)=> {
-                swal.fire({ icon: 'error', 
+                Swal.fire({ icon: 'error', 
                             title: `${err.error.mensaje}`,
                             text: 'el correo ya esta registrado'})
                 return throwError(err.message)
@@ -73,7 +73,7 @@ export class UsuarioService {
                 return true;
               }),
               catchError((err:any)=> {
-                swal.fire({ icon: 'error', title: `${err.error.mensaje}`})
+                Swal.fire({ icon: 'error', title: `${err.error.mensaje}`})
                 return throwError(err.message)
               })     
               )        

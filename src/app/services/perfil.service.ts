@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { map, catchError} from 'rxjs/operators';
 import { throwError} from 'rxjs';
 import { environment as env } from '../../environments/environment';
-import swal from'sweetalert2';
+import Swal from 'sweetalert2'
 
 
 @Injectable({
@@ -28,10 +28,10 @@ export class PerfilService {
     }
     return this.http.post(env.urlBase + env.api.perfiles.agregarPerfil + this.token, body)
             .pipe( map( (resp: any) => {
-              swal.fire({ icon: 'success', title: 'rutina agregada con exito'})
+              Swal.fire({ icon: 'success', title: 'rutina agregada con exito'})
             }),
             catchError((err:any)=> {
-              swal.fire({ icon: 'error', 
+              Swal.fire({ icon: 'error', 
                           title: `${err.error.mensaje}`})
               return throwError(err.message)
             })
