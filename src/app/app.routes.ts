@@ -5,12 +5,14 @@ import { RegisterComponent } from './login/register.component';
 import { PerfilComponent } from './components/perfil/perfil.component';
 import { RutinasComponent } from './components/rutinas/rutinas.component';
 import { ContenedorComponent } from './components/contenedor.component';
+import { LoginGuard } from './services/guards/login.guard';
 
 
 const appRoutes: Routes = [
     
     
     { path: '', component: ContenedorComponent,
+      canActivate: [LoginGuard],
       children: [
         {path: 'perfil', component: PerfilComponent},
         {path: 'rutinas', component: RutinasComponent},

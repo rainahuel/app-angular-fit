@@ -3,13 +3,13 @@
     <h2>Fitness</h2>
 
     <div class="contenedorFormulario">
-        <form>
+        <form [formGroup]="formRegister" (ngSubmit)="registrarUsuario()">
             <h3>Registro</h3>
-            <input type="text" name="nombre" placeholder="nombre">
-            <input type="text" name="apellido" placeholder="apellido">
-            <input type="email" name="email" placeholder="correo electronico">
-            <input type="password" name="password" placeholder="contraseña">
-            <input type="password" name="password" placeholder="repita contraseña">
+            <input formControlName="nombre" type="text"  placeholder="nombre">
+            <input formControlName="apellido" type="text"  placeholder="apellido">
+            <input formControlName="email" type="email"  placeholder="correo electronico">
+            <input formControlName="password" type="password"  placeholder="contraseña">
+            <input formControlName="passwordDos" type="password"  placeholder="repita contraseña">
             <input type="submit" value="Crear Cuenta">
             <p>ya tienes una cuenta? <a routerLink="/login">Ingresa aqui</a></p>
         </form>

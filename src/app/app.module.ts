@@ -9,6 +9,8 @@ import { PerfilComponent } from './components/perfil/perfil.component';
 import { RutinasComponent } from './components/rutinas/rutinas.component';
 import { HeaderComponent } from './components/todo/header.component';
 import { ContenedorComponent } from './components/contenedor.component';
+import { HttpClientModule }    from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -24,7 +26,10 @@ import { ContenedorComponent } from './components/contenedor.component';
   ],
   imports: [
     APP_ROUTES,
-    BrowserModule
+    BrowserModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

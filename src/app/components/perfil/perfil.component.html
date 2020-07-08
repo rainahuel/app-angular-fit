@@ -3,20 +3,20 @@
 
     <div class="contenedorInfoPerfil">
         <h3>Mi Perfil</h3>
-        <p>Nombre: arturo artt</p>
-        <p>Apellido: rrrrrrr</p>
-        <p>Correo: arturo@live.com</p>
-        <p>Telefono: 988989832</p>
-        <p>Pais: chile</p>
+        <p>Nombre: {{ usuario.nombre }} </p>
+        <p>Apellido: {{ usuario.apellido }} </p>
+        <p>Correo: {{ usuario.email }} </p>
+        <p>Telefono: {{ usuario.telefono }} </p>
+        <p>Pais: {{ usuario.pais }}</p>
     </div>
     
-    <div class="contenidoRutinas">
+    <div class="contenidoRutinas" *ngFor="let rutina of rutinas">
         <img src="../../../assets/img/muscular.png" class="imagen" width="200" height="200" >
-        <h3> Nombre Rutina: cardio hit</h3>
-        <p>Recomendaciones: para mayor efectividad realizar en ayudas</p>
-        <p>Objetivos: perdida de peso</p>
-        <p>Duracion: 15 minutos aprox. </p>
-        <button>quitar</button>
+        <h3> Nombre Rutina: {{ rutina.nombreRutina }} </h3>
+        <p>Recomendaciones: {{ rutina.recomendaciones }}</p>
+        <p>Objetivos: {{ rutina.objetivo }}</p>
+        <p>Duracion: {{ rutina.duracion }} </p>
+        <button  type="button" (click)="quitarRutina(rutina)">quitar</button>
     </div>
 
 
